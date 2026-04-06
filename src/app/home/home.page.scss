@@ -1,9 +1,6 @@
-// Variables
 $gap: 8px;
 $border-radius: 12px;
 $transition-speed: 0.5s;
-
-// Taille responsive selon la largeur de l'ecran
 $card-size: min(18vw, 80px);
 
 .game-container {
@@ -15,7 +12,6 @@ $card-size: min(18vw, 80px);
   background-color: var(--ion-background-color);
 }
 
-// Scoreboard
 .scoreboard {
   display: flex;
   flex-direction: column;
@@ -24,7 +20,7 @@ $card-size: min(18vw, 80px);
   background: #ffffff;
   border-radius: 16px;
   padding: 12px 32px;
-  box-shadow: 0 2px 12px rgba(92, 107, 192, 0.12);
+  box-shadow: 0 2px 12px rgba(46, 125, 50, 0.12);
 
   .moves-label {
     font-size: 12px;
@@ -42,7 +38,6 @@ $card-size: min(18vw, 80px);
   }
 }
 
-// Grille responsive 4x4
 .grid {
   display: grid;
   grid-template-columns: repeat(4, $card-size);
@@ -50,7 +45,6 @@ $card-size: min(18vw, 80px);
   gap: $gap;
 }
 
-// Wrapper de carte
 .card-wrapper {
   width: $card-size;
   height: $card-size;
@@ -58,7 +52,6 @@ $card-size: min(18vw, 80px);
   cursor: pointer;
 }
 
-// Carte
 .card {
   width: 100%;
   height: 100%;
@@ -71,7 +64,6 @@ $card-size: min(18vw, 80px);
   }
 }
 
-// Face commune
 .card-face {
   position: absolute;
   width: 100%;
@@ -79,7 +71,7 @@ $card-size: min(18vw, 80px);
   backface-visibility: hidden;
   border-radius: $border-radius;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(92, 107, 192, 0.15);
+  box-shadow: 0 2px 8px rgba(46, 125, 50, 0.15);
 
   img {
     width: 100%;
@@ -89,28 +81,25 @@ $card-size: min(18vw, 80px);
   }
 }
 
-// Dos
 .card-back {
   background-color: #ffffff;
   transform: rotateY(0deg);
-  border: 2px solid rgba(92, 107, 192, 0.2);
+  border: 2px solid rgba(46, 125, 50, 0.25);
 }
 
-// Face
 .card-front {
   background-color: #ffffff;
   transform: rotateY(180deg);
-  border: 2px solid rgba(92, 107, 192, 0.1);
+  border: 2px solid rgba(46, 125, 50, 0.15);
 }
 
-// Victoire
 .victory {
   margin-top: 28px;
   text-align: center;
   background: #ffffff;
   border-radius: 20px;
   padding: 24px 32px;
-  box-shadow: 0 4px 20px rgba(92, 107, 192, 0.15);
+  box-shadow: 0 4px 20px rgba(46, 125, 50, 0.15);
   animation: fadeIn 0.5s ease;
   width: 100%;
   max-width: 320px;
@@ -133,7 +122,6 @@ $card-size: min(18vw, 80px);
   }
 }
 
-// Bouton recommencer
 .restart {
   margin-top: 20px;
 
