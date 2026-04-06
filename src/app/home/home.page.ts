@@ -16,7 +16,7 @@ import { Card } from '../models/card.model';
   styleUrls: ['home.page.scss'],
   standalone: true,
   imports: [
-    CommonModule,      // ← nécessaire pour *ngFor, *ngIf dans le template
+    CommonModule,      
     IonHeader,
     IonToolbar,
     IonTitle,
@@ -34,7 +34,6 @@ export class HomePage implements OnInit {
   isLocked: boolean = false;
   isGameWon: boolean = false;
 
-  // 👇 Adapte ces noms selon tes fichiers PNG dans src/assets/cards/
   private readonly CARD_IMAGES: string[] = [
     'card1.png',
     'card2.png',
