@@ -6,7 +6,6 @@ import {
   IonTitle,
   IonContent,
   IonButton,
-  IonBadge
 } from '@ionic/angular/standalone';
 import { Card } from '../models/card.model';
 
@@ -16,18 +15,16 @@ import { Card } from '../models/card.model';
   styleUrls: ['home.page.scss'],
   standalone: true,
   imports: [
-    CommonModule,      
+    CommonModule,
     IonHeader,
     IonToolbar,
     IonTitle,
     IonContent,
     IonButton,
-    IonBadge,
   ],
 })
 export class HomePage implements OnInit {
 
-  // --- État du jeu ---
   cards: Card[] = [];
   flippedCards: Card[] = [];
   moves: number = 0;
